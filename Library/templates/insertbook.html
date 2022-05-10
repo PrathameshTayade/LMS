@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert Book</title>
+</head>
+<body>
+
+<form method="post" action="insertbook">
+    {% csrf_token %}
+    book name
+    <br>
+    <input type=" text" name = "bookname">
+    <br>
+     author name
+    <br>
+    <input type=" text" name = "authorname">
+    <br>
+    edition
+    <br>
+    <input type=" text" name = "edition">
+    <input type="submit">
+
+</form>
+
+</body>
+</html>
